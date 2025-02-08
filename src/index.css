@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Custom Utility Classes */
-
 /* Global Styles */
 body {
   @apply bg-slate-50 text-slate-900 font-sans leading-relaxed antialiased;
@@ -40,16 +38,9 @@ button:hover {
   @apply shadow-lg transform scale-105;
 }
 
-.bg-blue-500 {
-  @apply bg-blue-500;
-}
-
+/* ✅ Remove Circular Dependency */
 .bg-blue-500:hover {
   @apply bg-blue-600;
-}
-
-.bg-green-500 {
-  @apply bg-green-500;
 }
 
 .bg-green-500:hover {
@@ -74,10 +65,7 @@ button:hover {
 }
 
 /* Form Styles */
-form input {
-  @apply w-full p-2 border rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none;
-}
-
+form input,
 form select {
   @apply w-full p-2 border rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none;
 }
